@@ -6,10 +6,12 @@ import "./Form.css"
 
 const FormSignup = ({submitForm}) =>{
   const {handleChange, values, handleSubmit, errors}= useForm(submitForm, Validateform)
+  console.log(handleChange)
+  console.log(handleSubmit)
 
 
 
-  
+
 
   return(
   <div className="form-content-right">

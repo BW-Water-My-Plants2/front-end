@@ -23,7 +23,9 @@ const handleSubmit = e => {
   e.preventDefault()
   setErrors(Validateform(values))
   setIsSubmitting(true)
+  
 }
+console.log(setIsSubmitting)
 
 useEffect(
   () => {

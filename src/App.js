@@ -8,21 +8,18 @@ import {
   Route} from "react-router-dom";
 import FormSuccess from './components/FormSuccess';
 import NavigationBar from './components/NavigationBar';
+import LoginForm from './components/LoginForm';
+import NewloginForm from './components/NewloginForm';
+import StickyNav from './components/StickyNav';
 
 
 function App() {
 
 return (
     <div className="App">
-      <NavigationBar />
-      <Switch>
-        <Route path="/order" render={()=> <Form 
-        />} />
-        {/* <Route exact path="/" render={() => <Home/>} /> */}
-
-      </Switch>
-
-     <Form />
+      <StickyNav/>
+      <Form />
+     
       </div> 
            
  
