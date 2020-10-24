@@ -75,6 +75,7 @@ const FormSignup = ({ submitForm }) => {
             onChange={handleChange}
           />
           <input
+            
             id="email"
             type="email"
             name="email"
