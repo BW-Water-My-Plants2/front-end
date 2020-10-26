@@ -1,15 +1,12 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 .title {
@@ -63,11 +60,7 @@ code {
   border-radius: 10px;
   width: 40%;
   margin: 0 auto;
-  background: linear-gradient(
-    90deg,
-    rgb(39, 176, 255) 0%,
-    rgb(0, 232, 236) 100%
-  );
+  background: linear-gradient(90deg, rgb(39, 176, 255) 0%, rgb(0, 232, 236) 100%);
   height: 50vh;
   padding: 20px;
 }
@@ -85,11 +78,7 @@ form {
 .form-input-btn {
   width: 50%;
   border-radius: 2px;
-  background: linear-gradient(
-    90deg,
-    rgb(39, 143, 255) 0%,
-    rgb(12, 99, 250) 100%
-  );
+  background: linear-gradient(90deg, rgb(39, 143, 255) 0%, rgb(12, 99, 250) 100%);
   outline: none;
   border: none;
   color: #fff;
@@ -101,10 +90,18 @@ form {
 
 .form-input-btn:hover {
   cursor: pointer;
-  background: linear-gradient(
-    90deg,
-    rgb(39, 176, 255) 0%,
-    rgb(0, 232, 236) 100%
-  );
+  background: linear-gradient(90deg, rgb(39, 176, 255) 0%, rgb(0, 232, 236) 100%);
   transition: all 0.4s ease-out;
+}
+@media (max-width: 400px) {
+
+  .form-input-btn{
+    width:100% ;
+    font-size: 1em;
+  }
+
+  .form-inputs {
+    width: 90px;
+    background: red;
+  }
 }
