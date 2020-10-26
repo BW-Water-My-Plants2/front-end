@@ -3,6 +3,7 @@ import { axiosWithAuth } from "../utils/axiosWithAuth";
 import { useHistory } from "react-router-dom";
 import * as yup from"yup"
 import { Media } from "react-bootstrap";
+import axios from "axios"
 
 const schema = yup.object().shape({
   fullname:yup.string().required("Please enter your name").min(2, 'That\'s not valid'),
@@ -98,6 +99,10 @@ const Signup = (props) => {
 
   const formSubmit = e =>{
     e.preventDefault();
+    console.log("form submitted")
+    axios.post('https://reqres.in/api/users', values)
+      .then(res=> console.log(res))
+      .catch(err=>console.log(err))
   }
 
   return (
