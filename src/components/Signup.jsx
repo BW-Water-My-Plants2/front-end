@@ -2,6 +2,7 @@ import React, { useState, useEffect  } from "react";
 import { axiosWithAuth } from "../utils/axiosWithAuth";
 import { useHistory } from "react-router-dom";
 import * as yup from"yup"
+import { Media } from "react-bootstrap";
 
 const schema = yup.object().shape({
   fullname:yup.string().required("Please enter your name").min(2, 'That\'s not valid'),
@@ -109,6 +110,7 @@ const Signup = (props) => {
           Full Name:
           <div className="form-inputs">
             <input
+              className="form-inputs"
               id="fullname"
               type="text"
               name="fullname"
@@ -121,6 +123,7 @@ const Signup = (props) => {
           Username:
           <div className="form-inputs">
             <input
+              className="form-inputs"
               id="username"
               type="text"
               name="username"
@@ -132,6 +135,7 @@ const Signup = (props) => {
           Password:
           <div className="form-inputs">
             <input
+              className="form-inputs"
               id="password"
               type="text"
               name="password"
@@ -144,6 +148,7 @@ const Signup = (props) => {
           Phone Number:
           <div className="form-inputs">
             <input
+              className="form-inputs"
               id="phonenumber"
               type="text"
               name="phonenumber"
@@ -155,7 +160,7 @@ const Signup = (props) => {
           Email:
           <div className="form-inputs">
             <input
-              style={{backgroundColor:"red"}}
+              className="form-inputs"
               id="email"
               type="email"
               name="email"

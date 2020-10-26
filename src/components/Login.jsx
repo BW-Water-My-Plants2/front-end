@@ -3,6 +3,8 @@ import axios from "axios";
 import * as yup from"yup"
 import { useHistory } from "react-router-dom";
 import Loginform from "./LoginForm";
+import { Media } from "react-bootstrap";
+import "../index.css"
 
 
 const Schema = yup.object().shape({ 
@@ -78,6 +80,7 @@ const validate = (e) =>{
           Username:
           <div className="form-inputs">
             <input
+              className="form-inputs"
               id="username"
               type="text"
               name="username"
@@ -88,8 +91,9 @@ const validate = (e) =>{
             {errors.username.length > 0 ? <p classNames="errors">{errors.username}</p>: null}
           </div>
           Password:
-          <div className="form-inputs">
+          <div className="form-inputs"> 
             <input
+              className="form-inputs"
               id="password"
               type="text"
               name="password"
